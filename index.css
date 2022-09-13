@@ -1109,7 +1109,7 @@ footer .footer-BG p {
   .events {
     width: 675px;
     height: 325px;
-    margin-left: calc(80% - 675px / 2 + 0.5px);
+    margin-left: calc(83% - 675px / 2 + 0.5px);
     top: 578px;
   }
   .row {
@@ -1142,7 +1142,7 @@ footer .footer-BG p {
     box-sizing: border-box;
     width: 250px;
     height: 200px;
-    margin-right: 280px;
+    margin-left: 30px;
     margin-top: 20px;
   }
   .row .col1 {
@@ -1151,7 +1151,7 @@ footer .footer-BG p {
     box-sizing: border-box;
     width: 250px;
     height: 200px;
-    margin-left: 20px;
+    margin-left: 33px;
     margin-top: 20px;
   }
 
@@ -1410,7 +1410,18 @@ footer .footer-BG p {
   footer .section-footer .right .footer-div-2 {
     padding: 8px;
   }
+  footer .right a{
+    font-size: 2.5vmin;
+    padding: 0% 10p;
+    line-height: 160%;
 
+  }
+  footer .footer-div-2 .right{
+    padding: 50px;
+  }
+  footer .right h4{
+    font-size: 3.5vmin;
+  }
   footer .section-footer .right .footer-div-2 li {
     text-decoration: none;
   }
