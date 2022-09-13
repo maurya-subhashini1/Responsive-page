@@ -15,7 +15,7 @@ body {
   left: 0px;
   right: 0px;
   top: 0px;
-  background: url(image/TOPBAR\ 1.png)
+  background: url(image/TOPBAR\ 1.png);
 }
 .explore-2 figure {
   background-image: url(image/3.png);
@@ -423,7 +423,6 @@ p {
   border-color: #6ca7eb;
 }
 
-
 .section-6 {
   height: 120vh;
   width: 100%;
@@ -573,7 +572,7 @@ footer .footer-BG p {
 }
 
 @media only screen and (max-width: 810px) {
-  body{
+  body {
     align-items: center;
   }
   .top-navbar {
@@ -582,7 +581,7 @@ footer .footer-BG p {
     left: 0px;
     right: 0px;
     top: 0px;
-    background: url(image/TOPBAR\ 1.png)
+    background: url(image/TOPBAR\ 1.png);
   }
 
   .navbar {
@@ -750,7 +749,7 @@ footer .footer-BG p {
 
     top: 0px; */
   }
-  .explore-2{
+  .explore-2 {
     width: 675px;
     height: 450px;
     margin-left: calc(20% - 675px / 2 + 0.5px);
@@ -1058,32 +1057,33 @@ footer .footer-BG p {
 }
 
 @media only screen and (max-width: 450px) {
+  .top-navbar {
+    position: fixed;
+    height: 10px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background-size: auto;
+    background: url(image/TOPBAR\ 1.png);
+  }
   body {
-    overflow-y: hidden;
-    /* overflow: hidden; */
     width: 100%;
     align-items: center;
   }
-  .top-navbar {
-    background: url(TOPBAR.png);
-  }
+
   .navbar {
-    position: absolute;
+    position: fixed;
     height: 90px;
     left: 0px;
     right: 0px;
     top: 11px;
 
-    background: #ffffff;
+    background: #faf8f8;
   }
 
   .menu-btn {
     display: block;
   }
-  /* .navbar {
-    background-color: #f5f8ff;
-    padding: 0;
-  } */
   .logo {
     position: absolute;
     height: 50px;
@@ -1095,7 +1095,7 @@ footer .footer-BG p {
     width: 100%;
     height: 100vh;
     justify-content: center;
-    background: whitesmoke;
+    /* background: whitesmoke; */
     margin-top: -900px;
     transition: all 0.5s ease;
   }
@@ -1107,7 +1107,10 @@ footer .footer-BG p {
     margin: 30px auto;
   }
   .events {
-    align-items: center;
+    width: 675px;
+    height: 325px;
+    margin-left: calc(80% - 675px / 2 + 0.5px);
+    top: 578px;
   }
   .row {
     width: 100%;
@@ -1144,15 +1147,16 @@ footer .footer-BG p {
   }
   .row .col1 {
     background-image: url(image/Vector\(1\).png);
+
     box-sizing: border-box;
     width: 250px;
     height: 200px;
-    margin-left: calc(4% - 575px / 2);
-    top: 0px;
-    border-radius: 6px;
+    margin-left: 20px;
+    margin-top: 20px;
   }
+
   .hero {
-    height: 900px;
+    height: 140vh;
     width: 100%;
   }
   .hero .main-hero-section {
@@ -1165,11 +1169,26 @@ footer .footer-BG p {
     position: absolute;
     width: 307px;
     height: 493px;
-    left: calc(45% - 307px / 2 + 4.5px);
-    margin-top: 0px;
+    left: calc(50% - 307px / 2 + 4.5px);
+    top: 43px;
   }
   .hero .main-hero-section .hero-left-side h1 {
     position: absolute;
+    width: 305px;
+    height: 224px;
+    left: 3px;
+    top: 0px;
+
+    font-family: "DM Serif Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+
+    /* or 117% */
+
+    color: #000000;
+    /* position: absolute;
     width: 302px;
     height: 224px;
     left: 2px;
@@ -1181,19 +1200,19 @@ footer .footer-BG p {
     font-size: 9vmin;
     line-height: 60px;
 
-    color: #000000;
+    color: #000000; */
   }
   .hero .main-hero-section .hero-left-side p {
     position: absolute;
-    width: 283px;
+    width: 293px;
     height: 166px;
-    left: calc(30% - 307px / 2 + 4.5px);
-    /* top: 210px; */
+    margin-left: 0px;
+    top: 252px;
 
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 400;
-    font-size: 3vmin;
+    font-size: 18px;
     line-height: 23px;
     letter-spacing: 0.01em;
 
@@ -1204,7 +1223,7 @@ footer .footer-BG p {
     width: 183px;
     height: 61px;
     left: 40px;
-    top: 250px;
+    top: 400px;
   }
   .events h1 {
     font-size: 9vmin;
@@ -1232,8 +1251,10 @@ footer .footer-BG p {
     color: #000000;
   }
   .explore {
-    margin-top: 90%;
-    width: 100%;
+    width: 675px;
+    height: 325px;
+    margin-left: calc(30% - 675px / 2 + 0.5px);
+    margin-top: 348px;
   }
   .explore .common-section {
     margin-top: 0%;
@@ -1269,12 +1290,14 @@ footer .footer-BG p {
     top: 3.12px;
   }
   .section-4 {
-    margin-top: 390px;
+    width: 675px;
+    height: 325px;
+    margin-left: calc(50% - 675px / 2 + 0.5px);
+    margin-top: 448px;
   }
 
   .section-4 .ss {
-    margin-bottom: 80px;
-    margin-right: 600px;
+    margin-left: calc(50% - 675px / 2 + 0.5px);
   }
   .section-4 img {
     background-image: url(image/2\(1\).png);
@@ -1297,53 +1320,35 @@ footer .footer-BG p {
     font-size: 9vmin;
   }
   .explore-2 {
-    width: 100%;
+    width: 675px;
+    height: 125vh;
+    margin-left: calc(15% - 675px / 2 + 0.5px);
+    margin-top: 448px;
   }
+  
   .explore-2 .common-section-2 {
     padding-left: 200px;
     margin: 20px auto;
     flex-direction: column;
   }
-  .explore-2 .common-section-2 .right-side h2 {
-    width: 270.85px;
-    height: 91px;
-    left: 34px;
-    top: 452px;
-
-    font-family: "DM Serif Text";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 7vmin;
-    line-height: 44px;
-
-    color: #000000;
-  }
+ 
   .explore-2 .common-section-2 .right-side h2 {
     font-size: 9vmin;
     margin-left: 140px;
   }
   .explore-2 .common-section-2 .right-side p {
-    width: 281px;
-    height: 159px;
-    left: 35px;
-    margin-top: 5px;
-
-    font-family: "DM Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
-    letter-spacing: 0.01em;
-
-    color: #000000;
+    width: 180px;
+    font-size: 4vmin;
+    margin-left: 300px;
   }
   .explore-2 .try-btn {
+    margin-bottom: 120px;
     box-sizing: border-box;
     background-color: #368ef3;
     width: 204px;
     height: 51px;
-    margin-left: 380px;
-    margin-top: 50px;
+    margin-left: 360px;
+    /* margin-top: 50px; */
 
     background: #ffffff;
     border: 4px solid #ef8094;
@@ -1352,8 +1357,11 @@ footer .footer-BG p {
   .section-6 .hed {
     flex-direction: column;
   }
+  
   .section-6 {
+    margin-top: 20px;
     width: 100%;
+    padding: 0 20px;
     height: 2321.18px;
   }
   .section-6 .btn {
@@ -1382,6 +1390,10 @@ footer .footer-BG p {
     letter-spacing: 0.01em;
 
     color: #000000;
+  }
+  .section-6 h3{
+    font-size: 9vmin;
+    /* margin-left: 30pc; */
   }
   .section-6 .task img:hover {
     border-color: #ef8094;
