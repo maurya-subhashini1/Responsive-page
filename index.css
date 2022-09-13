@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  width: 1440px;
+  overflow-x: hidden;
+  align-items: center;
+  background: #FFFFFF
+}
 .explore-2 figure {
   background-image: url(image/3.png);
   margin-top: 3px;
@@ -17,12 +23,18 @@
   background-repeat: no-repeat;
   background-position: 150px 200px;
 }
-body .top-navbar {
-  /* display: block; */
+/* body .top-navbar {
+  background: url(TOPBAR.png);
+
+  display: block;
   position: fixed;
   position: top;
+} */
+.navbar {
+  background: url(TOPBAR.png);
+  position: fixed;
+  background-position:top;
 }
-
 .navbar {
   /* background-color: #ffffff; */
   margin-top: 10;
@@ -82,7 +94,7 @@ nav {
 .hero {
   background: #f5f8ff;
   height: 800px;
-  width: 1440px;
+  width: 100%;
   left: 0px;
   top: 0px;
   border-radius: 0px;
@@ -174,15 +186,7 @@ section {
   font-size: 4vmin;
   color: #000000;
 }
-/* .line {
-  width: 245.22px;
-  height: 16.79px;
-  margin-left: calc(14% - 245.22px / 2 + 247.96px);
-  top: 77.38px;
 
-  background: #000000;
-  transform: rotate(-178.84deg);
-} */
 
 .row {
   display: flex;
@@ -327,8 +331,8 @@ p {
   font-family: "DM Sans";
   font-style: normal;
   /* font-weight: 200; */
-  font-size: 3vmin;
-  line-height: 23px;
+  font-size: 2vmin;
+  line-height: 30px;
   letter-spacing: 0.01em;
 
   color: #000000;
@@ -981,20 +985,40 @@ footer .footer-BG p {
 .menu-btn {
   position: absolute;
   top: 30px;
-  right: 30px;
+  margin-left: 250px;
   width: 40px;
   cursor: pointer;
   display: none;
 }
 
 @media only screen and (max-width: 450px) {
+  body{
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+  }
+  .top-navbar {
+    background: url(TOPBAR.png);
+
+  }
+
+  /* .navbar {
+    width: 0%;
+    position: fixed; */
+    /* height: 70px; */
+    /* left: 0px;
+    right: 0px;
+    top: 11px; */
+
+    /* background: #a51414;
+  } */
   .menu-btn {
     display: block;
   }
-  .navbar {
+  /* .navbar {
     background-color: #f5f8ff;
     padding: 0;
-  }
+  } */
   .logo {
     position: absolute;
     height: 50px;
@@ -1012,7 +1036,7 @@ footer .footer-BG p {
   }
   .mobile-menu {
     margin-top: 0px;
-    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 2%;
   }
   .nav-links li {
     margin: 30px auto;
